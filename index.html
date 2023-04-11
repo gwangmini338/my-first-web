@@ -4,40 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <style>
-        #grid {
-            display: grid;
-            grid-template-columns: 140px 1fr;
-        }
-        ol {
-            border-right: 1px solid gray;
-            width: 100px;
-            margin: 0px;
-            padding: 20px
-        }
-        h1 {
-            border-bottom: 1px solid gray;
-            padding: 10px;
-            margin: 0px;
-            padding: 20px
-        }
-        @media(max-width:600px) {
-            #grid {
-                display:block;
-            }
-            ol {
-                border-right:none;
-            }
-            h1 {
-                border-bottom:none;
-            }
-        }
-    </style>
+    <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
-    <h1><a href="index.html">광민home</a>
-    </h1>
+    <input type="button" value="Dark" onclick="
+    document.querySelector('body').style.backgroundColor='black';
+    document.querySelector('body').style.color = 'white';
+"
+style="float:right"/>
+<input type="button" value="Light" onclick="
+    document.querySelector('body').style.backgroundColor='white';
+    document.querySelector('body').style.color = 'black';
+"
+style="float:right"/>
+    <h1><a href="index.html">광민home</a></h1>
     <div id="grid">
         <ol>
             <li><a href="1.html">자기소개</a></li>
